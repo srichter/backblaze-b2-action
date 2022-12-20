@@ -24,7 +24,7 @@ fi
 
 EXCLUDE=""
 if [ -n "$EXCLUDE_LIST" ]; then
-  EXCLUDE="--excludeDirRegex '$EXCLUDE_LIST'"
+  EXCLUDE="--excludeRegex '$EXCLUDE_LIST'"
 fi
 
 b2 authorize-account ${B2_APPKEY_ID} ${B2_APPKEY}
